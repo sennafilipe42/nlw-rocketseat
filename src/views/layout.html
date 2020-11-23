@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <!--Atributo de tag para Linguagem-->
+
+    <!--HTML Hypertext Hiper texto Markup Marcação de texto Language Línguagem -->
+    <head>
+        <meta charset="UTF-8">
+        <!--Atributo para acentuação-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Tag para configurar tamanho-->
+
+        {% block title %}
+            <title>Ecoleta</title>
+            <!--Tag de título-->
+        {% endblock title %}
+
+        <!--Colocando o link referente a fonte do HTML Também foi posto duas fonts, roboto e unbunto-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+        <!--Puxando o css da pasta styles-->
+        <link rel="stylesheet" href="/styles/main.css">
+
+        {% block styles %}{% endblock styles %}
+
+        <!--Responsive fica por ultimo mesmo-->
+        <link rel="stylesheet" href="/styles/responsive.css">
+
+    </head>
+    <body>
+
+        <div id="{{pageId}}">
+            {% block content %}{% endblock content %}
+
+        </div>
+
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+    </body>
+</html>

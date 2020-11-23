@@ -1,0 +1,59 @@
+/*largura maxima de 900 ele aplica a regra a baixo*/
+@media (max-width: 900px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50px;
+        transform:translateX(-50%);
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+         
+    }
+
+    #page-search-results .cards img{
+        height: 250px;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+}
+
+/*largura minima da tela 1700 pra cima ele aplica a regra a baixo*/
+@media(min-width:1700px){
+    #page-home{
+        background-position-x: 40vw; /*eixo da horizontal*/
+    }
+
+}
+
+/*altura máxima de 760 aplica a regra a baixo*/
+@media(max-height:760px){
+    #page-home{
+        background-position-y: 200px ;        /*eixo da vertical*/
+    }
+
+}
+
